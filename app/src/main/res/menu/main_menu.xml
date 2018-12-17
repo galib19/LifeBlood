@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_settings_btn"
+        android:title="@string/account_setting_text" />
+    <item
+        android:id="@+id/deactivating_donor_btn"
+        android:title="@string/deactivating_donor_btn_text" />
+    <item
+        android:id="@+id/history_btn"
+        android:title="@string/history_btn" />
+    <item
+        android:id="@+id/action_logout_btn"
+        android:title="@string/action_logout_text" />
+</menu>

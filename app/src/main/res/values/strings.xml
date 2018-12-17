@@ -1,0 +1,46 @@
+<resources>
+    <string name="google_maps_api_key">AIzaSyAVqP_V05NyqDJJslL2BiFC4SU0vJWyvgI</string>
+    <string name="app_name">LifeBlood</string>
+    <string name="email_hint">Your Email...</string>
+    <string name="pass_hint">Password...</string>
+    <string name="login_logo_desc">Logo_Login_Page</string>
+    <string name="login_title_desc">Login_Title_Page</string>
+    <string name="login_btn_text">Log into Account</string>
+    <string name="login_reg_btn_text">Need a new Account?</string>
+    <string name="account_setting_text">Account Settings</string>
+    <string name="action_logout_text">Logout</string>
+    <string name="reg_btn_text">Create new account</string>
+    <string name="reg_login_btn">Already have an Account?</string>
+    <string name="reg_pass_text">Password...</string>
+    <string name="reg_confirm_pass_text">Confirm Password...</string>
+    <string name="setup_name_hint_text" />
+    <string name="setup_name_text">Name...</string>
+    <string name="setup_phone_no_text">Phone No...</string>
+    <string name="setup_blood_group">Blood Group</string>
+    <string name="setup_btn_text">Save Account Settings</string>
+    <string name="blood_request_btn_text">Make a Blood Request</string>
+    <string name="main_show_map_text">Show on Map</string>
+    <string name="hospital_name_txt">Hospital Name</string>
+    <string name="blood_request_details">Add Details...</string>
+    <string name="blood_request_post_btn_text">Confirm</string>
+    <string name="cancel_blood_request">Cancel</string>
+    <string name="title_activity_my_location_map">Map</string>
+    <string name="profile_name">Name:</string>
+    <string name="profile_name_text">No Name</string>
+    <string name="phone_no">Phone No:</string>
+    <string name="phone_no_text">01555555555</string>
+    <string name="blood_group">Blood Group:</string>
+    <string name="blood_group_text">B+</string>
+    <string name="show_my_map_btn_txt">Show on Map</string>
+    <string name="welcome_text">Welcome to LifeBlood</string>
+    <string name="show_on_map_btn">Show on Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history_btn">History</string>
+    <string name="history_hospital_name">Hospital Name:</string>
+    <string name="history_details">Details:</string>
+    <string name="deactivating_donor_btn_text">Donor Deactivation</string>
+    <string name="donor_deactivation_btn_text">Deactivate Donorship</string>
+    <string name="donor_reactivation_btn_text">Reactivate Donorship</string>
+</resources>

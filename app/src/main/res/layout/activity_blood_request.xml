@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/blood_request_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/blood_request_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="458dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/blood_request_toolbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible">
+
+        <Spinner
+            android:id="@+id/request_bloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/select_blood_textview"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/hospital_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="124dp"
+            android:hint="@string/hospital_name_txt"
+            android:inputType="textPersonName"
+            android:maxLength="40"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/blood_request_post_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/blood_request_cancel_btn"
+            android:layout_marginEnd="56dp"
+            android:background="@color/colorAccent"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="@string/blood_request_post_btn_text"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            tools:textColor="@android:color/background_light" />
+
+        <ProgressBar
+            android:id="@+id/blood_request_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/blood_request_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="56dp"
+            android:layout_marginStart="80dp"
+            android:background="@color/colorAccent"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="@string/cancel_blood_request"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            tools:textColor="@android:color/background_light" />
+
+        <EditText
+            android:id="@+id/blood_request_details"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/hospital_name"
+            android:ems="10"
+            android:hint="@string/blood_request_details"
+            android:inputType="textMultiLine"
+            android:maxLength="150"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/select_blood_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@android:color/transparent"
+            android:padding="15dp"
+            android:text="Select Blood Group"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/user_list_container">
+
+    </FrameLayout>
+
+</RelativeLayout>

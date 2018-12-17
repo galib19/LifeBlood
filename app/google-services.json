@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "739277371392",
+    "firebase_url": "https://lifeblood-fd07d.firebaseio.com",
+    "project_id": "lifeblood-fd07d",
+    "storage_bucket": "lifeblood-fd07d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739277371392:android:52e41c4ab38bcff3",
+        "android_client_info": {
+          "package_name": "com.example.galib.lifeblood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739277371392-br3ha0oua5parpi283trr9fij5vuvpth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.galib.lifeblood",
+            "certificate_hash": "bc233d43145a9c90d04f8af03b1c2f5d2058a35b"
+          }
+        },
+        {
+          "client_id": "739277371392-oi850grvt25calpitlh0mvorlnmhcrml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsB6ZOPNxMGGZ3lxH1J8L3txs-tVrppmc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739277371392-oi850grvt25calpitlh0mvorlnmhcrml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a32c2c"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="374dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="363dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/main_profile_image"
+                android:layout_width="153dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="56dp"
+                android:padding="4dp"
+                android:src="@drawable/default_image" />
+
+            <TextView
+                android:id="@+id/history_hospital_name_text"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/divider"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="65dp"
+                android:fontFamily="monospace"
+                android:padding="5dp"
+                android:text="@string/profile_name_text"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="99dp"
+                android:background="@android:color/darker_gray"
+                android:color="#1FFFFFFF"
+                android:fadingEdge="horizontal|vertical" />
+
+            <TextView
+                android:id="@+id/phone_no"
+                android:layout_width="100dp"
+                android:layout_height="29dp"
+                android:layout_alignStart="@+id/divider"
+                android:layout_alignTop="@+id/phone_no_text"
+                android:fontFamily="sans-serif"
+                android:padding="5dp"
+                android:text="@string/phone_no"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/phone_no_text"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/history_hospital_name_text"
+                android:layout_below="@+id/history_hospital_name_text"
+                android:layout_marginTop="-65dp"
+                android:fontFamily="monospace"
+                android:padding="5dp"
+                android:text="@string/phone_no_text"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/history_hospital_name"
+                android:layout_width="95dp"
+                android:layout_height="29dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/history_hospital_name_text"
+                android:layout_marginStart="4dp"
+                android:fontFamily="sans-serif"
+                android:padding="5dp"
+                android:text="@string/profile_name"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/history_blood_group"
+                android:layout_width="100dp"
+                android:layout_height="29dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/phone_no"
+                android:fontFamily="sans-serif"
+                android:padding="5dp"
+                android:text="@string/blood_group"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/history_blood_group_text"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/history_hospital_name_text"
+                android:layout_below="@+id/phone_no"
+                android:fontFamily="monospace"
+                android:padding="5dp"
+                android:text="@string/blood_group_text"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/welcome_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/background_light"
+                android:backgroundTint="@android:color/background_light"
+                android:fontFamily="monospace"
+                android:padding="10dp"
+                android:text="@string/welcome_text"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/show_on_map_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/main_profile_image"
+                android:backgroundTint="@color/colorAccent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/show_on_map_btn"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/blood_request_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="428dp"
+        android:background="#d91f1f"
+        android:ellipsize="end"
+        android:padding="15dp"
+        android:text="@string/blood_request_btn_text"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
+        tools:textAllCaps="false" />
+
+
+</android.support.constraint.ConstraintLayout>
